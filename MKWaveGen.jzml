@@ -41,10 +41,10 @@ canvas_refresh(getobject());
 canvas_refresh(getobject());" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/MKWaveGen/Ring/ButtonCanvas/onCursorUp" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
 <VARIABLE name="isPressed=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/Ring/isPressed" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
-<VARIABLE name="startTime=" value="81413.078125" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/Ring/startTime" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="startTime=" value="82275.609375" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/Ring/startTime" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="buttonRadius=" value="25" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/Ring/buttonRadius" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="amplitude=" value="0.034244" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/Ring/amplitude" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="5126,5159,5193" kbmouse_scale="0,1,0,1"/>
-<VARIABLE name="lastTime=" value="81413.078125" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/Ring/lastTime" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="22319,20041,20292" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="lastTime=" value="82275.609375" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/Ring/lastTime" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="22319,20041,20292" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="phaseAccumulator=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/Ring/phaseAccumulator" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="init()" script="buttonRadius = 25;
 startTime = time;
@@ -126,7 +126,7 @@ canvas_refresh(RingCanvas);" trigger_script="" trigger_type="4" trigger="1" cloc
 <VARIABLE name="release=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/TapTempoButton/release" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="hold=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/TapTempoButton/hold" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/TapTempoButton/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
-<VARIABLE name="tapTimes=" value="81413.078125" send="1" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/TapTempoButton/tapTimes" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="tapTimes=" value="82275.609375" send="1" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/TapTempoButton/tapTimes" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="onPadPressed(indices)" script="decl now = time;
 decl count = sizeof(tapTimes);
 
@@ -204,7 +204,7 @@ setattribute(this, 'items', {
 <VARIABLE name="release=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/MIDIOutputMenuButtons/release" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="hold=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/MIDIOutputMenuButtons/hold" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/MIDIOutputMenuButtons/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
-<VARIABLE name="selectedIndex=" value="-1" send="1" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/MIDIOutputMenuButtons/selectedIndex" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="selectedIndex=" value="2" send="1" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/MIDIOutputMenuButtons/selectedIndex" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="onLoad()" script="selectedIndex = -1;
 refresh();" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/MKWaveGen/MIDIOutputMenuButtons/onLoad" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 <SCRIPT name="refresh()" script="decl colorOff = RGB(0.2, 0.2, 0.2);
@@ -237,15 +237,15 @@ if (indices == 0) {
 }
 " trigger_script="" trigger_type="255" trigger_name="onReleased" trigger="1" clock="0" clock_div="4" osc_message="/MKWaveGen/MIDIOutputMenuButtons/onPadReleased" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
-<WINDOW class="Container" text="NumPad" x="28" y="40" width="252" height="339" id="52" state="0" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="2302755" label="1" tabbar="1" meta="0">
-<WINDOW class="Container" text="_" x="-8" y="-8" width="252" height="339" id="13" state="1" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
-<WINDOW class="Text" text="TitleLabel" x="4" y="4" width="173" height="26" id="11" state="241" group="0" font="tahoma,9,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="MIDI Value">
+<WINDOW class="Container" text="NumPad" x="12" y="12" width="264" height="331" id="52" state="0" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="2302755" label="1" tabbar="1" meta="0">
+<WINDOW class="Container" text="_" x="-8" y="-8" width="264" height="331" id="13" state="1" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<WINDOW class="Text" text="TitleLabel" x="4" y="4" width="185" height="26" id="11" state="241" group="0" font="tahoma,9,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="Lemur Target">
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/TitleLabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Text" text="DisplayLabel" x="76" y="38" width="156" height="38" id="13" state="241" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="0">
+<WINDOW class="Text" text="DisplayLabel" x="76" y="38" width="168" height="38" id="13" state="241" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="0">
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/DisplayLabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Pads" text="DigitButtons" x="4" y="84" width="228" height="235" id="14" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" bitmap_off="" bitmap_on="" capture="1" color="2302755,1596013" column="2" label="2" multicolor="0" multilabel="0" row="5" style="0">
+<WINDOW class="Pads" text="DigitButtons" x="4" y="84" width="240" height="227" id="14" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" bitmap_off="" bitmap_on="" capture="1" color="2302755,1596013" column="2" label="2" multicolor="0" multilabel="0" row="5" style="0">
 <PARAM name="x=" value="0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/DigitButtons/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="attack=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/DigitButtons/attack" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="decay=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/DigitButtons/decay" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -275,10 +275,10 @@ refresh();" trigger_script="" trigger_type="255" trigger_name="onPressed" trigge
 <SCRIPT name="onPadPressed(indices)" script="stringValue = '' + minValue;
 refresh();" trigger_script="" trigger_type="255" trigger_name="onPressed" trigger="1" clock="0" clock_div="4" osc_message="/MKWaveGen/NumPad/_/ClearButton/onPadPressed" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
-<WINDOW class="Text" text="RangeLabel" x="4" y="77" width="228" height="20" id="16" state="229" group="0" font="tahoma,9,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="0 - 127">
+<WINDOW class="Text" text="RangeLabel" x="4" y="77" width="240" height="20" id="16" state="229" group="0" font="tahoma,9,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="0 - 7">
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/RangeLabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
-<WINDOW class="Pads" text="CloseButton" x="184" y="4" width="48" height="26" id="17" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" bitmap_off="" bitmap_on="" capture="1" color="8388608,1596013" column="1" label="0" multicolor="0" multilabel="1" row="1" style="0">
+<WINDOW class="Pads" text="CloseButton" x="196" y="4" width="48" height="26" id="17" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" bitmap_off="" bitmap_on="" capture="1" color="8388608,1596013" column="1" label="0" multicolor="0" multilabel="1" row="1" style="0">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/CloseButton/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="attack=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/CloseButton/attack" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="decay=0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/CloseButton/decay" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -289,10 +289,10 @@ refresh();" trigger_script="" trigger_type="255" trigger_name="onPressed" trigge
 <SCRIPT name="onLoad()" script="setattribute(getobject(), 'labels', 'Close');" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/MKWaveGen/NumPad/_/CloseButton/onLoad" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 <SCRIPT name="onPadReleased(indices)" script="close();" trigger_script="" trigger_type="255" trigger_name="onReleased" trigger="1" clock="0" clock_div="4" osc_message="/MKWaveGen/NumPad/_/CloseButton/onPadReleased" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
-<VARIABLE name="title=" value="'MIDI Value'" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/title" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="197,1,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="title=" value="'Lemur Target'" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/title" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="197,1,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="stringValue=" value="'0'" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/stringValue" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="-31514,2,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="minValue=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/minValue" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="93,99,106" kbmouse_scale="0,1,0,1"/>
-<VARIABLE name="maxValue=" value="127" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/maxValue" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="maxValue=" value="7" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/maxValue" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="didTypeKey=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKWaveGen/NumPad/_/didTypeKey" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="93,99,106" kbmouse_scale="0,1,0,1"/>
 <SCRIPT name="refresh()" script="setattribute(DisplayLabel, 'content', stringValue);
 setattribute(RangeLabel, 'content', '' + minValue + ' - ' + maxValue);
@@ -406,6 +406,8 @@ ty += optionButtonH;
 decl ringH = maxY - ty - 8;
 setobjectrect(Ring, {tx, maxY - ringH, rightColumnW, ringH});
 Ring.layoutSubviews();
+
+setobjectrect(NumPad, {12, 12, w - 24, h - 24});
 " trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/MKWaveGen/enableAutoLayout" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
 </WINDOW>
