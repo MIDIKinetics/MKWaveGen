@@ -7,7 +7,8 @@ Continuous Wave Generator
 ## Installation
 
 1. Click the green "Code" button at the top of this page and download the zip files.
-2. Double-click the **MKWaveGen.jzml** file to try it out. You can then copy-paste it into one of your projects.
+2. Drag and drop MKWaveGen.jzlib or MKWaveGenMini.jzlib into one of your Lemur projects to start using it right away.
+3. You can also double-click the **MKWaveGenDemo.jzml** file to see a demo of how it works.
 
 ## Feedback and Support
 
